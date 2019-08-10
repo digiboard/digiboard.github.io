@@ -1,0 +1,103 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+body {
+    background-color: #efefef;
+}
+
+.tm_container {
+    width: 450px;
+    height: 600px;
+    background: #ffffff;
+    margin: 10px auto;
+    border-radius:10px;
+    padding-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tm_app_icon_container {
+    width: 70px;
+    height: 70px;
+    margin: auto;   
+}
+
+.tm_app_icon_container > i {
+    height: 100%;
+    width: 100%;
+    color: #007ACC;
+    font-size: 84px;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+}
+
+.please_enter_details {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    padding-top: 30px;  
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    margin:auto;
+    text-align: center;
+}
+
+input[type="text"],input[type="password"] {
+    height: 50px;
+    width: 75%;
+    border: solid 1px #585858;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px ;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    cursor: pointer;
+    border: solid 4px #007ACC;
+}
+
+button {
+    cursor: pointer;
+}
+
+#forgot_pwd_btn {
+    background: none;
+    width: 75%;
+    color: #424242;
+    height: 5px;
+    text-align: right;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#login_btn  {
+    background: #E60023;
+    height: 50px;
+    width: 75%;
+    color: #efefef;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
