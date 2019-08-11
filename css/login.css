@@ -10,7 +10,10 @@
 }
 
 body {
-    background-color: #efefef;
+    /* background-color: #ccc; */
+    background-image: url('../images/artboard.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tm_container {
