@@ -10,17 +10,24 @@
 }
 
 body {
-    background-color: #efefef;
+    background-color: #555555;
+
 }
 
 .tm_container {
+    
     width: 450px;
     height: 600px;
-    background: #ffffff;
-    margin: 10px auto;
+    background: #efefef;
     border-radius:10px;
-    padding-top: 50px;
+    padding-top: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .tm_app_icon_container {
@@ -92,7 +99,6 @@ button {
 #login_btn  {
     background: #E60023;
     height: 50px;
-    width: 75%;
     color: #efefef;
     border: none;
     font-family: 'Roboto', sans-serif;
@@ -100,4 +106,13 @@ button {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    width: 80%;
+    margin: auto;
+}
+
+.login_btn_wrapper {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    padding-top: 50px;  
 }
