@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7470bacc54.js"></script>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Oswald|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- 
+        Header
+     -->
+    <header>
+        <div class="main">
+            <div class="site-logo">Digital Notice Board</div>
+            <div class="add-course-btn"><button><i class="fas fa-plus"></i>Add Table</button></div>
+            <div class="search-site-container">
+                <form action="#" class="search-site clearfix">
+                    <input type="text" placeholder="Filter by course title, time, venue." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="uid">
+                <p id="name_display_field">Augustine Amoh Nkansah</p>
+                <p id="email_display_field">augedoo@gmail.com</p>
+            </div>
+
+        </div>
+    </header>    
+        
+    <main>
+        <!-- 
+            Add course dialogue box
+         -->
+        <section id="add_course_dialog">
+            <h3>ADD A COURSE <i class="fas fa-times"></i></h3>
+
+            <form action="#"> 
+                <div class="form_cat">
+                    <label>Course: <span style="color:red">*</span> </label>
+                    <br>  
+                    <select name="courses" id="course_dropdown">
+                        <option value="">Please select the course title</option>
+
+                    </select>
+                </div>
+             
+                <div class="form_cat">
+                    <label>Venue: <span style="color:red">*</span> </label>
+                    <br>  
+                    <select name="courses" id="course_dropdown">
+                        <option value="">Select a lecture hall for this class</option>     
+                    </select>       
+                </div>
+
+                <div class="form_cat">
+                    <label>Lecturer's Name: <span style="color:red">*</span> </label>
+                    <br>  
+                    <select name="courses" id="course_dropdown">
+                        <option value="">Please select lecturer or tutors name</option>
+                        
+                    </select>       
+                </div>
+                
+                <div class="form_cat">
+                    <label>Time: <span style="color:red">*</span> </label>
+                    <br>
+                    <div class="start_time">
+                        Start Time : <input type="time" name="start_time" id="start_time">    
+                    </div>  
+                    <div class="end_time">
+                        End Time : <input type="time" name="end_time" id="end_time">    
+                    </div>     
+                </div>
+                <br>
+
+            </form>
+            
+            <div class="options_btns">
+                <button id="cancel_booking_btn">Cancel</button>
+                <button id="add_booking_btn">Add Course</button>
+            </div>
+        </section>
+
+        <!-- Course Section -->
+        <section class="section-level">
+            <div class="head">
+                <h2>Level 100</h2>
+                <ul>
+                    <li class="tooltip"><i class="far fa-question-circle"></i><span class="tooltiptext">Augusted</span></li>
+                    <li><i class="fas fa-minus"></i></li>
+                    <li><i class="fas fa-times"></i></li>
+                </ul>
+            </div>
+            <div class="levels_container">
+                <table class="table table-striped table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="td-course">Course</th>
+                            <th class="td-time">Time</th>
+                            <th class="td-venue">Venue</th>
+                            <th class="td-tutor">Tutor</th>
+                            <th class="td-action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >CSIT 202 - Introduction to Computers and Networks</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Prof. Micheal Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                         <!-- you can use this sample data to see how it looks like  -->
+                        <!-- <tr>
+                            <td>CSIT 204 - Introduction to Information Security</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Profkjvgskljlfkjlfa Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr> 
+                        <tr>
+                            <td>CSIT 206 - Applied IT Programming(PHP)</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Profkjvgskljlfkjlfa Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr> 
+                        <tr>
+                            <td>CSIT 208 - Multimedia and Web Design</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Profkjvgskljlfkjlfa Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr> 
+                        <tr>
+                            <td>UGBS 204 - Macroeconomics and Business</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Profkjvgskljlfkjlfa Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr> 
+                        <tr>
+                            <td>UGRC 231 - Introduction to African Studies | Gender and Development</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Old Block Ground Floor Hall 2</td>
+                            <td>Profkjvgskljlfkjlfa Kolugu</td>
+                            <td><button>Edit</button></td>
+                        </tr> 
+                         -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="add_spec_course_btn">
+                <button id="toogle_course"><i class="fas fa-plus"></i>Add Row</button>
+            </div>
+        </section>       
+    </main>
+                
+    <footer>
+        <div class="main">
+            
+        </div>
+    </footer>
+
+</body>
+</html>
