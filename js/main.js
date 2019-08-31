@@ -4,13 +4,13 @@ $(document).ready(function() {
     //*****************************
     
     ///load html components
-    // $(".tm-sidebar").load('page/sidebar.php');
-    // $(".tm-header").load('page/header.php');
+    // $(".tm-sidebar").load('page/sidebar.html');
+    // $(".tm-header").load('page/header.html');
 
     //Load page without refresh
     // $('ul#nav li a').click(function(){
     //     var page = $(this).attr('href');
-    //     $(".tm-content").load('page/' + page + '.php');
+    //     $(".tm-content").load('page/' + page + '.html');
     //     return false;
     // });
 
@@ -134,15 +134,15 @@ var tutor_name_list =  [
     {"tutor_name":"Prof. Edem Koliko"}
 ];
 
-// if (pagename == "level_100.php") {
+// if (pagename == "level_100.html") {
 //     alert('this is fun on page Level 100');
 // }
-// else if(pagename == "level_200.php"){
+// else if(pagename == "level_200.html"){
 //     alert('this is fun on page Level 200');
 // }
-// else if(pagename == "level_300.php"){
+// else if(pagename == "level_300.html"){
 //     alert('this is fun on page Level 300');
 // }
-// else if(pagename == "level_400.php"){
+// else if(pagename == "level_400.html"){
 //     alert('this is fun on page Level 400');
 // }

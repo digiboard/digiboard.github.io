@@ -13,7 +13,7 @@ var selectedIndex = -1;
 
 function init() {
     document.getElementById("tablerows").innerHTML = "";
-    if (pagename == "level_100.php") {
+    if (pagename == "level_100.html") {
         if (localStorage.level100Schedule) {
             l100TimeTable = JSON.parse(localStorage.level100Schedule);
             for (var i = 0; i < l100TimeTable.length; i++) {
@@ -21,7 +21,7 @@ function init() {
             }
         }
     }
-    else if(pagename == "level_200.php"){
+    else if(pagename == "level_200.html"){
         if (localStorage.level200Schedule) {
             l200TimeTable = JSON.parse(localStorage.level200Schedule);
             for (var i = 0; i < l200TimeTable.length; i++) {
@@ -29,7 +29,7 @@ function init() {
             }
         }
     }
-    else if(pagename == "level_300.php"){
+    else if(pagename == "level_300.html"){
         if (localStorage.level300Schedule) {
             l300TimeTable = JSON.parse(localStorage.level300Schedule);
             for (var i = 0; i < l300TimeTable.length; i++) {
@@ -37,7 +37,7 @@ function init() {
             }
         }
     }
-    else if(pagename == "level_400.php"){
+    else if(pagename == "level_400.html"){
         if (localStorage.level400Schedule) {
             l400TimeTable = JSON.parse(localStorage.level400Schedule);
             for (var i = 0; i < l400TimeTable.length; i++) {
@@ -68,7 +68,7 @@ function onRegisterPressed() {
     // var timeRange = startTime + " - " + endTime; 
     // console.log(courseName);
     var scheduleObject = {courseName: courseName, startTime: startTime, endTime: endTime, venue: venue, roomName: roomName, tutorName: tutorName};
-    if (pagename == "level_100.php") {
+    if (pagename == "level_100.html") {
         if (selectedIndex === -1) {
             l100TimeTable.push(scheduleObject);
         } else {
@@ -76,7 +76,7 @@ function onRegisterPressed() {
         }
         localStorage.level100Schedule = JSON.stringify(l100TimeTable);
     }
-    else if(pagename == "level_200.php"){
+    else if(pagename == "level_200.html"){
         if (selectedIndex === -1) {
             l200TimeTable.push(scheduleObject);
         } else {
@@ -84,7 +84,7 @@ function onRegisterPressed() {
         }
         localStorage.level200Schedule = JSON.stringify(l200TimeTable);
     }
-    else if(pagename == "level_300.php"){
+    else if(pagename == "level_300.html"){
         if (selectedIndex === -1) {
             l300TimeTable.push(scheduleObject);
         } else {
@@ -92,7 +92,7 @@ function onRegisterPressed() {
         }
         localStorage.level300Schedule = JSON.stringify(l300TimeTable);
     }
-    else if(pagename == "level_400.php"){
+    else if(pagename == "level_400.html"){
         if (selectedIndex === -1) {
             l400TimeTable.push(scheduleObject);
         } else {
@@ -125,19 +125,19 @@ function prepareTableCell(index, courseName, startTime, endTime, venue, roomName
 
 
 function deleteTableRow(index) {
-    if (pagename == "level_100.php") {
+    if (pagename == "level_100.html") {
         l100TimeTable.splice(index, 1);
         localStorage.level100Schedule = JSON.stringify(l100TimeTable);
     }
-    else if(pagename == "level_200.php"){
+    else if(pagename == "level_200.html"){
         l200TimeTable.splice(index, 1);
         localStorage.level200Schedule = JSON.stringify(l200TimeTable);
     }
-    else if(pagename == "level_300.php"){
+    else if(pagename == "level_300.html"){
         l300TimeTable.splice(index, 1);
         localStorage.level300Schedule = JSON.stringify(l300TimeTable);
     }
-    else if(pagename == "level_400.php"){
+    else if(pagename == "level_400.html"){
         l400TimeTable.splice(index, 1);
         localStorage.level400Schedule = JSON.stringify(l400TimeTable);
     }
@@ -158,16 +158,16 @@ function onClearPressed() {
 
 function onEditPressed(index) {
     selectedIndex = index;
-    if (pagename == "level_100.php") {
+    if (pagename == "level_100.html") {
         var scheduleObject = l100TimeTable[index];
     }
-    else if(pagename == "level_200.php"){
+    else if(pagename == "level_200.html"){
         var scheduleObject = l200TimeTable[index];
     }
-    else if(pagename == "level_300.php"){
+    else if(pagename == "level_300.html"){
         var scheduleObject = l300TimeTable[index];
     }
-    else if(pagename == "level_400.php"){
+    else if(pagename == "level_400.html"){
         var scheduleObject = l400TimeTable[index];
     }
     document.getElementById("courseList").value = scheduleObject.courseName;
@@ -182,25 +182,25 @@ function onEditPressed(index) {
 
 
 function onDeployPressed() {
-    if (pagename == "level_100.php") {
+    if (pagename == "level_100.html") {
         var myJsonString = localStorage.level100Schedule.toString();
         // var textArea = document.getElementById("showJson");
         // textArea.innerHTML = JSON.stringify(l100TimeTable, null, 4);
         console.log(l100TimeTable);
     }
-    else if(pagename == "level_200.php"){
+    else if(pagename == "level_200.html"){
         var myJsonString = localStorage.level200Schedule.toString();
         // var textArea = document.getElementById("showJson");
         // textArea.innerHTML = JSON.stringify(l200TimeTable, null, 4);
         console.log(l200TimeTable);
     }
-    else if(pagename == "level_300.php"){
+    else if(pagename == "level_300.html"){
         var myJsonString = localStorage.level300Schedule.toString();
         // var textArea = document.getElementById("showJson");
         // textArea.innerHTML = JSON.stringify(l300TimeTable, null, 4);
         console.log(l300TimeTable);
     }
-    else if(pagename == "level_400.php"){
+    else if(pagename == "level_400.html"){
         var myJsonString = localStorage.level400Schedule.toString();
         // var textArea = document.getElementById("showJson");
         // textArea.innerHTML = JSON.stringify(l400TimeTable, null, 4);
