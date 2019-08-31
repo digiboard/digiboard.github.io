@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/homepage.css?version=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Oswald|Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Home</title>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script>  -->
+    <!-- <script src="js/jquery.miranda.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/scr.js"></script> -->
+</head>
+<body>
+    
+    <header>
+        <div class="tm-header">
+            <div class="nav_button" id="menu_ico">
+                <i class="material-icons">menu</i>
+            </div>
+            
+            <div class="logo_img_wrapper"> <!-- this is hidden for now  -->
+                <img src="images/logo.png" alt="dnb logo">
+            </div>
+
+        </div>
+    </header>    
+
+    <aside>
+        <div class="tm-sidebar">
+            <div class="tm-logo">
+                <i class="material-icons">panorama_fish_eye</i>
+                <h1><span id="digital-txt">DNB</span></h1>
+            </div>
+            <nav>
+                <div class="tm-levels">
+                    <h1>Time Table</h1>
+                    <ul id="nav">
+                        <li class="nav-item">
+                            <a href="homepage.php">
+                                <div id="nav_icon"><i class="material-icons">home</i></div>
+                                <div id="nave_text">Home</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="level_100.php">
+                                <div id="nav_icon"><i class="material-icons">label_important</i></div>
+                                <div id="nave_text">Level 100</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="level_200.php">
+                                <div id="nav_icon"><i class="material-icons">label_important</i></div>
+                                <div id="nave_text">Level 200</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="level_300.php">
+                                <div id="nav_icon"><i class="material-icons">label_important</i></div>
+                                <div id="nave_text">Level 300</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="level_400.php">
+                                <div id="nav_icon"><i class="material-icons">label_important</i></div>
+                                <div id="nave_text">Level 400</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn-wrapper">
+                        <button>Add Group</button>
+                    </div>
+                </div>
+
+                <div class="tm-more">
+                    <h1>More</h1>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#">
+                                <div id="nav_icon"><i class="material-icons">brightness_1</i></div>
+                                <div id="nave_text">Annoucement</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <div id="nav_icon"><i class="material-icons">brightness_1</i></div>
+                                <div id="nave_text">Suggestions</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="legal-details">
+                    <h5>Legal Details</h5>
+                    <p>Copyright details will stay here</p>
+                </div>
+            </nav>
+        </div>
+    </aside>
+    
+        
+    <main>
+          
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+body {
+}
+
+.tm_content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/joanna2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tm_container {
+    width: 450px;
+    height: 600px;
+    border-radius:10px;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;  
+    /* background-color: #0000007a; */
+	margin: auto;
+}
+.tm_container_shader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.tm_app_icon_container {
+    width: 100px;
+    height: 84px;
+    margin: auto;   
+}
+
+.tm_app_icon_container > img {
+    height: 100%;
+    width: 100%;
+}
+
+
+h1 {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    color: #252525;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+form {
+    margin:auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+input[type="text"],input[type="password"] {
+    height: 40px;
+    width: 75%;
+    border-bottom: solid 1px #AA540F;
+    border-radius: 5px;
+    background: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px ;
+    color: #1a1919c7;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    cursor: pointer;
+    border-bottom: solid 1px #1B1464;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+
+::placeholder{
+    color: #424242;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+#forgot_pwd_btn {
+    background: none;
+    width: 75%;
+    color: #424242;
+    height: 5px;
+    text-align: right;
+    padding: 5px;
+    font-size: 12px;
+}
+#forgot_pwd_btn:hover {  
+    color: #181717;
+    font-weight: 300;
+}
+
+#login_btn  {
+    background: #3E34AD;
+    /* background: rgb(87 , 76, 207); */
+    height: 42px;
+    color: #efefef;
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+}
+
+#login_btn:hover  {      
+    /* background: rgb(62, 52, 173); */
+    background: rgb(87 , 76, 207);
+}
+
+
+.login_btn_wrapper {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    padding-top: 50px;  
+}

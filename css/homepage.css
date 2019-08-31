@@ -1,0 +1,638 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Livvic', sans-serif; */
+}
+
+a:hover, i:hover, button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.678);
+    position:fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.header_and_main {
+    position: absolute; 
+    top: 0px;
+    right: 0px;   
+    width: calc(100% - 220px);
+    height: 100%;
+}
+
+.fullScreenWidth {
+    position: absolute; 
+    top: 0px;
+    right: 0px;   
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    float: right;
+    width: 100%;
+    height: 94%;
+} 
+
+/* *****************************************
+        SIDEBAR
+******************************************/
+aside{
+    /* display: none; */
+}
+
+.tm-sidebar{
+    position: absolute; 
+    top: 0px;
+    left: 0px;   
+    width: 220px;
+    height: 100%;
+    background: #323645;
+}
+
+.tm-logo{
+    background: #007ACC;
+    height: 6%;
+    width: 100%;
+    padding: 0px 30px;
+} 
+
+.tm-logo i{
+    font-size: 24px;
+    width: 30%;
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+    font-weight: 100;
+    color: #EBFFFF; 
+    line-height: 48px;
+}
+
+.tm-logo h1{
+    width: 70%;
+    float: right;
+    line-height: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Popping', sans-serif;
+}
+
+#digital-txt{
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    margin-left: 5px;
+    color: #EBFFFF;
+    /* color: #007ACC; */
+    text-shadow: 2px 2px rgba(31, 18, 8, 0.479);
+}
+
+#notice-board-txt{
+    font-size: 20px;
+    color: #1B1464;
+}
+
+nav {
+    height: 94%;
+}
+
+nav h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 64px;
+    color: #82869B;
+    padding: 24px 24px 24px 36px;
+    letter-spacing: 2px;   
+    margin-bottom: 5px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 36px;
+}
+
+.btn-wrapper{
+    margin: 10px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    /* display: none; */
+}
+
+nav button{
+    height: 36px;
+    width: 70%;
+    background: #007ACC;
+    border-radius: 3px;
+    color: #efefef;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+nav li a{
+    padding: 0px 42px;
+    text-decoration: none;
+    display: block;
+    color: #6E7287;
+    width: 100%;
+    height: 100%;
+    font-family: 'roboto', sans-serif;
+}
+
+nav li a:hover{
+    background: #2629313b;
+    font-weight: bold;
+}
+#nav_icon{ 
+    float: left;
+    height: 100%;
+    padding-top: 7px;
+}
+
+#nave_text{ 
+    line-height: 36px;
+    height: 100%;
+    float: left;
+}
+
+nav li i {
+    margin-right: 20px;
+}
+
+/* remain selected when clicked */
+nav li.active {
+    background-color:#262931;
+}
+
+nav li.active a {
+    font-weight:bold;
+    color: #0080B3;
+}
+
+.tm-levels {
+    font-weight: 800;
+    height: 55%;
+}
+
+.tm-levels > ul > li i{ 
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+.tm-more {
+    background: #262931;
+    padding: 26px 0px 20px 0px;
+    height: 30%;
+}
+
+.tm-more > h1 {
+    text-transform: capitalize;
+    padding: 26px 24px 20px 36px;
+}
+
+.tm-more > ul > li{ 
+    text-transform: capitalize;
+    font-family: 'Open Sans Condensed', sans-serif;    font-weight: 500;
+    font-size: 10px;
+    font-size: 13px;
+}
+
+.tm-more > ul > li i{ 
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+/* remain selected when clicked */
+.tm-more > ul > li:hover{
+    background-color:#3438428d;
+}
+
+.tm-more > ul > li.active {
+    background-color:#343842e5;
+}
+
+
+
+
+/*fix legal details to the bottom of the nav*/
+.legal-details{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 42px;
+    color: #6A6A7A;
+    height: 15%;
+}
+
+.legal-details p{
+    font-size: 12px;
+}
+
+
+/********************************************* 
+            Header
+**********************************************/
+header {
+    height: 6%;
+}
+
+.tm-header {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #ffffff;
+    border-bottom: solid 1px rgb(200, 200, 202);
+    padding: 0px 30px;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.nav_button {
+    width: 60px;
+    height: 100%;
+    padding: 5px 0px 5px 0px;
+    float: left;
+    text-align: left;
+}
+
+.nav_button i {
+    font-size: 2em;
+    color: #1E1E1E;
+}
+
+.logo_img_wrapper{
+    display: none;
+    width: 60px;
+    height: 100%;
+    margin: auto;
+    /* float: right; */
+}
+
+.logo_img_wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*******************************
+Page Topic
+*******************************/
+.page_topic {
+    height: 39%;
+    margin-bottom: .4%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page_topic p {
+    padding: 20px 20px 5px 30px;
+    width: 40%;
+    float: left;
+    text-align: left;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+    color: #6F8395;
+}
+
+.page_topic p span {
+    font-size: 10px;
+    color: rgba(30, 30, 30, 0.712);
+}
+
+.page_topic > .deploy_options {
+    height: 100%;
+    float: right;
+    text-align: right;
+    width: 20%;
+    padding: 15px 30px 15px 0px;
+}
+
+.deploy_options button {
+    float: right;
+    height: 40px;
+    font-size: 12px;
+    margin-left: 14px;
+    background: #007ACC;
+    border-radius: 4px;
+    padding: 7px;
+    color: #DCEEF8;  
+}
+
+.deploy_options button:hover {
+    background: #6C757D;
+    color: #ffffff;
+}
+
+
+/*******************************
+Add course dialog box
+*******************************/
+#top_section {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+}
+
+
+#top_section h3 {
+    height: 15%;
+    width: 100%;
+    padding: 5px 30px;
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.698);
+    background: #ffffff;
+    /* margin-top: 20px; */
+    font-family: 'Open sans', sans-serif;
+
+}
+
+#top_section h3 .expand_less {
+    float: right;
+    font-size: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.698);
+}
+
+#top_section form {
+    height: 45%;
+    width: calc(100%/20px);
+    font-size: 16px;
+    display: block;
+    padding: 10px 30px 10px 30px;
+}
+
+.form_cat {
+    float: left;
+    height: 100%;
+    width: 10%;
+    margin-right: 7px;
+}
+
+.form_cat label {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    height: 40%;
+    color:rgba(0, 0, 0, 0.658);
+    display: block;
+}
+
+.form_cat .dropdown {
+    width: 100%;
+    height: 60%;
+    font-size: 16px;
+    display: block;
+    font-family: roboto, Helvetica, sans-serif;
+    color: #4F4F4F; 
+    border-radius: 5px;
+    border: solid rgba(15, 15, 15, 0.205) 1px;
+}
+
+.form_cat_time {
+    float: left;
+    height: 100%;
+    width: 5%;
+    display: block;
+    margin-right: 7px;
+}
+
+.form_cat_time label {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    height: 40%;
+    color:rgba(0, 0, 0, 0.658);
+    display: block;
+}
+
+.form_cat_time .time {
+    width: 100%;
+    height: 60%;
+    font-size: 16px;
+    display: block;
+    font-family: roboto, Helvetica, sans-serif;
+    color: #4F4F4F; 
+    border-radius: 5px;
+    border: solid rgba(15, 15, 15, 0.205) 1px;
+    padding: 5px;
+}
+
+.options_btns{
+    height: 60%;
+    height: 100%;
+    float: right;
+}
+
+.options_btns div{
+    height: 40%;
+    display: block;
+}
+.options_btns button{
+    height: 60%;
+}
+
+#clear{
+    float: right;
+    background: #6C757D;
+    color: #efefef;
+    width: 70px;
+    /* bottom: 0; */
+    border-radius: 4px;
+    padding: 7px;
+    color: #DCEEF8;
+}
+
+
+#submit{
+    float: right;
+    margin-left: 14px;
+    background: #007ACC;
+    border-radius: 4px;
+    padding: 7px;
+    color: #DCEEF8;
+}
+
+
+/****************************************
+            Course Tables Section 
+****************************************/
+.table-container {
+    height: 75%;
+    background: #fff;
+    /* display: none; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+
+.levels_container {
+    min-height: 170px;
+    margin: 0px auto;
+}
+
+/* table */
+table{
+    width: 100%;
+	border-collapse: collapse;
+    height: 100px;
+    font-family: fantasy;
+    border-spacing: 0px;
+    /* margin-top: 10px;    */
+}
+
+th {
+    text-align: left;
+    font-size: 15px;
+}
+
+thead {
+    background: rgba(108, 117, 125, 0.315);
+    font-size: 12px;
+    font-family: 'Livvic', sans-serif;
+    color: rgb(100, 102, 104);
+}
+
+tbody{
+    /* overflow: auto; */
+    margin: 0px 10px; 
+}
+
+tr {
+    height: 40px;
+    /* padding: 0px 30px; */
+}
+
+tr:hover {
+    background: rgba(0, 122, 204, 0.322);
+}
+
+thead tr:hover {
+    background: #D1D4D6;
+}
+
+td {
+    /* overflow: hidden; */
+    /* padding: 5px; */
+    font-size: 13px;
+}
+
+.td-course {
+    width: 15%;   
+}
+
+.td-time{
+    width: 15%;   
+}
+
+.td-venue{
+    width: 20%;   
+}
+.td-room{
+    width: 10%;   
+}
+
+.td-tutor{
+    width: 25%;   
+}
+
+.td-action{
+    width: 15%; 
+    /* text-align: center; */
+}
+
+
+td:last-child, th:last-child {
+    padding-right: 30px;  
+    text-align: center;
+}
+td:last-child {
+    padding-right: 30px;  
+    text-align: right;
+}
+
+td:first-child, th:first-child {
+    padding-left: 30px;
+}
+
+#tablerows tr:nth-child(odd){
+	/* background-color: rgba(139, 137, 139, 0.4); */
+}
+
+#tablerows tr:nth-child(even){
+	/* background-color: rgba(255, 255, 255, 0.534); */
+}
+
+tbody tr td button {
+    width: 45px;
+    border-radius: 5px;
+    color: #efefef;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#edit-btn {
+    height: 25px;
+    background: #007ACC;
+    border-radius: 3px;
+    padding: 3px;
+    color: #e7e5e5;
+    margin: 2.5px 2.5px 2.5px 0px;
+    font-size: 12px;
+}
+#delete-btn {
+    font-size: 12px;
+    height: 25px;
+    background: #007ACC;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2.5px 2px 2.5px 2.5px;
+}
+
+
+
+
+/* Tooltip**********************************************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+    /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
